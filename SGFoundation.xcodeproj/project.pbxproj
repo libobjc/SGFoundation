@@ -48,8 +48,17 @@
 			children = (
 				9C5BEAA21DCDEFEA00385153 /* SGFoundation.h */,
 				9C5BEAA31DCDEFEA00385153 /* Info.plist */,
+				9CCE87611DCF6AC000B62C21 /* SGCategory */,
 			);
 			path = SGFoundation;
+			sourceTree = "<group>";
+		};
+		9CCE87611DCF6AC000B62C21 /* SGCategory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SGCategory;
+			path = Core/SGCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
