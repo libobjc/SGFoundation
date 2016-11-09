@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9C5BEAA41DCDEFEA00385153 /* SGFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C5BEAA21DCDEFEA00385153 /* SGFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CD491061DD321CF002D978A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD491051DD321CF002D978A /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C5BEA9F1DCDEFEA00385153 /* SGFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SGFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5BEAA21DCDEFEA00385153 /* SGFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGFoundation.h; sourceTree = "<group>"; };
 		9C5BEAA31DCDEFEA00385153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CD491051DD321CF002D978A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD491061DD321CF002D978A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +35,7 @@
 			children = (
 				9C5BEAA11DCDEFEA00385153 /* SGFoundation */,
 				9C5BEAA01DCDEFEA00385153 /* Products */,
+				9CD491041DD321CF002D978A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +63,14 @@
 			);
 			name = SGCategory;
 			path = Core/SGCategory;
+			sourceTree = "<group>";
+		};
+		9CD491041DD321CF002D978A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CD491051DD321CF002D978A /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
