@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9C5BEAA41DCDEFEA00385153 /* SGFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C5BEAA21DCDEFEA00385153 /* SGFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CCB961C1DDAF661004657EF /* NSString+SGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCB961A1DDAF661004657EF /* NSString+SGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CCB961D1DDAF661004657EF /* NSString+SGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB961B1DDAF661004657EF /* NSString+SGExtension.m */; };
 		9CD491061DD321CF002D978A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD491051DD321CF002D978A /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -15,6 +17,8 @@
 		9C5BEA9F1DCDEFEA00385153 /* SGFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SGFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5BEAA21DCDEFEA00385153 /* SGFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGFoundation.h; sourceTree = "<group>"; };
 		9C5BEAA31DCDEFEA00385153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CCB961A1DDAF661004657EF /* NSString+SGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SGExtension.h"; sourceTree = "<group>"; };
+		9CCB961B1DDAF661004657EF /* NSString+SGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SGExtension.m"; sourceTree = "<group>"; };
 		9CD491051DD321CF002D978A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -60,6 +64,8 @@
 		9CCE87611DCF6AC000B62C21 /* SGCategory */ = {
 			isa = PBXGroup;
 			children = (
+				9CCB961A1DDAF661004657EF /* NSString+SGExtension.h */,
+				9CCB961B1DDAF661004657EF /* NSString+SGExtension.m */,
 			);
 			name = SGCategory;
 			path = Core/SGCategory;
@@ -80,6 +86,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CCB961C1DDAF661004657EF /* NSString+SGExtension.h in Headers */,
 				9C5BEAA41DCDEFEA00385153 /* SGFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CCB961D1DDAF661004657EF /* NSString+SGExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
