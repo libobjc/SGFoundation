@@ -176,8 +176,7 @@ NSString * const SGNetworkReachabilityStatusDidChangeName = @"SGNetworkReachabil
     [self.sessionManager.requestSerializer setValue:nil forHTTPHeaderField:field];
 }
 
-#pragma mark
-#pragma mark - 工具方法
+#pragma mark - tools
 
 - (NSString *)combinRequestUrl:(SGRequest *)request
 {
@@ -187,17 +186,6 @@ NSString * const SGNetworkReachabilityStatusDidChangeName = @"SGNetworkReachabil
     NSString * baseUrl = request.baseURLString;
     if (baseUrl.length <= 0) baseUrl = self.baseURLString;
     return [NSURL URLWithString:detailUrl relativeToURL:[NSURL URLWithString:baseUrl]].absoluteString;
-}
-
-- (NSString*)encodeString:(NSString*)unencodedString
-{
-    NSString *encodedString = (NSString *)
-    CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
-                                                              (CFStringRef)unencodedString,
-                                                              NULL,
-                                                              (CFStringRef)@"!*'();:@&=+$,/?%#[]",
-                                                              kCFStringEncodingUTF8));
-    return encodedString;
 }
 
 @end
