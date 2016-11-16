@@ -10,6 +10,15 @@
 		9C5BEAA41DCDEFEA00385153 /* SGFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C5BEAA21DCDEFEA00385153 /* SGFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CCB961C1DDAF661004657EF /* NSString+SGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCB961A1DDAF661004657EF /* NSString+SGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CCB961D1DDAF661004657EF /* NSString+SGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB961B1DDAF661004657EF /* NSString+SGExtension.m */; };
+		9CCDCB441DDC37A000E5C993 /* SGNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB3C1DDC37A000E5C993 /* SGNetwork.h */; };
+		9CCDCB451DDC37A000E5C993 /* SGNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDCB3D1DDC37A000E5C993 /* SGNetwork.m */; };
+		9CCDCB461DDC37A000E5C993 /* SGOffset.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB3E1DDC37A000E5C993 /* SGOffset.h */; };
+		9CCDCB471DDC37A000E5C993 /* SGOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDCB3F1DDC37A000E5C993 /* SGOffset.m */; };
+		9CCDCB481DDC37A000E5C993 /* SGRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB401DDC37A000E5C993 /* SGRequest.h */; };
+		9CCDCB491DDC37A000E5C993 /* SGRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDCB411DDC37A000E5C993 /* SGRequest.m */; };
+		9CCDCB4A1DDC37A000E5C993 /* SGResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB421DDC37A000E5C993 /* SGResponse.h */; };
+		9CCDCB4B1DDC37A000E5C993 /* SGResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDCB431DDC37A000E5C993 /* SGResponse.m */; };
+		9CCDCB4E1DDC3DD000E5C993 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCDCB4D1DDC3DD000E5C993 /* AFNetworking.framework */; };
 		9CD491061DD321CF002D978A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD491051DD321CF002D978A /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +28,15 @@
 		9C5BEAA31DCDEFEA00385153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CCB961A1DDAF661004657EF /* NSString+SGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SGExtension.h"; sourceTree = "<group>"; };
 		9CCB961B1DDAF661004657EF /* NSString+SGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SGExtension.m"; sourceTree = "<group>"; };
+		9CCDCB3C1DDC37A000E5C993 /* SGNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGNetwork.h; sourceTree = "<group>"; };
+		9CCDCB3D1DDC37A000E5C993 /* SGNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGNetwork.m; sourceTree = "<group>"; };
+		9CCDCB3E1DDC37A000E5C993 /* SGOffset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGOffset.h; sourceTree = "<group>"; };
+		9CCDCB3F1DDC37A000E5C993 /* SGOffset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGOffset.m; sourceTree = "<group>"; };
+		9CCDCB401DDC37A000E5C993 /* SGRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRequest.h; sourceTree = "<group>"; };
+		9CCDCB411DDC37A000E5C993 /* SGRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGRequest.m; sourceTree = "<group>"; };
+		9CCDCB421DDC37A000E5C993 /* SGResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGResponse.h; sourceTree = "<group>"; };
+		9CCDCB431DDC37A000E5C993 /* SGResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGResponse.m; sourceTree = "<group>"; };
+		9CCDCB4D1DDC3DD000E5C993 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../SGVendors/AFNetworking-master/build/Debug-iphoneos/AFNetworking.framework"; sourceTree = "<group>"; };
 		9CD491051DD321CF002D978A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -27,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CCDCB4E1DDC3DD000E5C993 /* AFNetworking.framework in Frameworks */,
 				9CD491061DD321CF002D978A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,9 +75,35 @@
 			children = (
 				9C5BEAA21DCDEFEA00385153 /* SGFoundation.h */,
 				9C5BEAA31DCDEFEA00385153 /* Info.plist */,
+				9CCDCB4C1DDC3C2500E5C993 /* SGVendors */,
+				9CCDCB3B1DDC376000E5C993 /* SGNetwork */,
 				9CCE87611DCF6AC000B62C21 /* SGCategory */,
 			);
 			path = SGFoundation;
+			sourceTree = "<group>";
+		};
+		9CCDCB3B1DDC376000E5C993 /* SGNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				9CCDCB3C1DDC37A000E5C993 /* SGNetwork.h */,
+				9CCDCB3D1DDC37A000E5C993 /* SGNetwork.m */,
+				9CCDCB3E1DDC37A000E5C993 /* SGOffset.h */,
+				9CCDCB3F1DDC37A000E5C993 /* SGOffset.m */,
+				9CCDCB401DDC37A000E5C993 /* SGRequest.h */,
+				9CCDCB411DDC37A000E5C993 /* SGRequest.m */,
+				9CCDCB421DDC37A000E5C993 /* SGResponse.h */,
+				9CCDCB431DDC37A000E5C993 /* SGResponse.m */,
+			);
+			name = SGNetwork;
+			path = Core/SGNetwork;
+			sourceTree = "<group>";
+		};
+		9CCDCB4C1DDC3C2500E5C993 /* SGVendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SGVendors;
+			path = Core/SGVendors;
 			sourceTree = "<group>";
 		};
 		9CCE87611DCF6AC000B62C21 /* SGCategory */ = {
@@ -74,6 +119,7 @@
 		9CD491041DD321CF002D978A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9CCDCB4D1DDC3DD000E5C993 /* AFNetworking.framework */,
 				9CD491051DD321CF002D978A /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -86,8 +132,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CCDCB481DDC37A000E5C993 /* SGRequest.h in Headers */,
 				9CCB961C1DDAF661004657EF /* NSString+SGExtension.h in Headers */,
+				9CCDCB461DDC37A000E5C993 /* SGOffset.h in Headers */,
+				9CCDCB4A1DDC37A000E5C993 /* SGResponse.h in Headers */,
 				9C5BEAA41DCDEFEA00385153 /* SGFoundation.h in Headers */,
+				9CCDCB441DDC37A000E5C993 /* SGNetwork.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CCDCB451DDC37A000E5C993 /* SGNetwork.m in Sources */,
+				9CCDCB491DDC37A000E5C993 /* SGRequest.m in Sources */,
+				9CCDCB4B1DDC37A000E5C993 /* SGResponse.m in Sources */,
+				9CCDCB471DDC37A000E5C993 /* SGOffset.m in Sources */,
 				9CCB961D1DDAF661004657EF /* NSString+SGExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +239,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -236,6 +291,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
