@@ -8,16 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for SGFoundation.
-FOUNDATION_EXPORT double SGFoundationVersionNumber;
+FOUNDATION_EXPORT double SGFoundationVersionNumber;     // version number
+FOUNDATION_EXPORT const unsigned char SGFoundationVersionString[];      // version string
 
-//! Project version string for SGFoundation.
-FOUNDATION_EXPORT const unsigned char SGFoundationVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <SGFoundation/PublicHeader.h>
+// class
 #import <SGFoundation/SGNetwork.h>
 #import <SGFoundation/SGRequest.h>
 #import <SGFoundation/SGResponse.h>
 #import <SGFoundation/SGOffset.h>
+
+// categroy
 #import <SGFoundation/NSString+SGExtension.h>
 #import <SGFoundation/NSString+SGEncode.h>
