@@ -17,6 +17,9 @@ NSString * const SGNetworkReachabilityStatusDidChangeName = @"SGNetworkReachabil
 @property (nonatomic, strong) AFHTTPSessionManager * sessionManager;
 @property (nonatomic, assign) SGNetworkReachabilityStatus reachabilityStatus;
 
+@property (nonatomic, copy) NSString * offsetKey;
+@property (nonatomic, copy) NSString * sizeKey;
+
 @end
 
 @implementation SGNetwork
@@ -39,6 +42,9 @@ NSString * const SGNetworkReachabilityStatusDidChangeName = @"SGNetworkReachabil
         self.sessionManager.operationQueue.maxConcurrentOperationCount = 4;
         self.sessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
         self.sessionManager.requestSerializer = [AFHTTPRequestSerializer serializer];
+        
+        self.offsetKey = @"offset";
+        self.sizeKey = @"size";
     }
     return self;
 }
@@ -76,8 +82,8 @@ NSString * const SGNetworkReachabilityStatusDidChangeName = @"SGNetworkReachabil
         if (![parameters isKindOfClass:[NSDictionary class]] || parameters == nil) {
             NSMutableDictionary * temp = [NSMutableDictionary dictionaryWithDictionary:parameters];
             SGOffsetParams par = offset.offsetParams;
-            [temp setObject:[NSString stringWithFormat:@"%ld", par.offset] forKey:@"offset"];
-            [temp setObject:[NSString stringWithFormat:@"%ld", par.size] forKey:@"size"];
+            [temp setObject:[NSString stringWithFormat:@"%ld", par.offset] forKey:self.offsetKey];
+            [temp setObject:[NSString stringWithFormat:@"%ld", par.size] forKey:self.sizeKey];
             parameters = temp;
         }
     }
@@ -173,6 +179,12 @@ NSString * const SGNetworkReachabilityStatusDidChangeName = @"SGNetworkReachabil
 - (void)removeVauleForHTTPHeaderField:(NSString *)field
 {
     [self.sessionManager.requestSerializer setValue:nil forHTTPHeaderField:field];
+}
+
+- (void)setOffsetKey:(NSString *)offsetKey sizeKey:(NSString *)sizeKey
+{
+    self.offsetKey = offsetKey;
+    self.sizeKey = sizeKey;
 }
 
 #pragma mark - tools

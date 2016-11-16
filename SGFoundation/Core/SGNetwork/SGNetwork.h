@@ -27,11 +27,16 @@ typedef NS_ENUM(NSInteger, SGNetworkReachabilityStatus) {
 @property (nonatomic, assign, readonly) SGNetworkReachabilityStatus reachabilityStatus;
 @property (nonatomic, copy, readonly) NSDictionary <NSString *, NSString *> * HTTPRequestHeaders;
 
+// HTTP request header
 - (void)setValuesForHTTPRequestHeaders:(NSDictionary <NSString *, NSString *> *)HTTPRequestHeaders;
 - (void)setValue:(NSString *)value forHTTPHeaderField:(NSString *)field;
 - (void)removeVauleForHTTPHeaderField:(NSString *)field;
 
+// request control
 - (void)addRequest:(SGRequest *)request;
 - (void)cancelRequest:(SGRequest *)request;
+
+// request config
+- (void)setOffsetKey:(NSString *)offsetKey sizeKey:(NSString *)sizeKey;     // default is 'offset' and 'size'
 
 @end
