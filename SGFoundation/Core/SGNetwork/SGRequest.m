@@ -30,16 +30,16 @@
     return _timeoutInterval;
 }
 
-- (void)setResponse:(SGResponse *)response
+- (void)setPretreatmentResponseObject:(id)pretreatmentResponseObject
 {
-    if (_response != response) {
-        _response = response;
+    if (_pretreatmentResponseObject != pretreatmentResponseObject) {
+        _pretreatmentResponseObject = pretreatmentResponseObject;
         if ([self responseObjectClass] == nil) return;
-        if ([response.originalResponseObject isKindOfClass:[NSArray class]]) {
-            if ([response.originalResponseObject count] <= 0) return;
-            self.responseObject = [self objectWithKeyValues:response.originalResponseObject objectClass:self.responseObjectClass];
+        if ([pretreatmentResponseObject isKindOfClass:[NSArray class]]) {
+            if ([self.originalResponseObject count] <= 0) return;
+            self.responseObject = [self objectWithKeyValues:pretreatmentResponseObject objectClass:self.responseObjectClass];
         } else {
-            self.responseObject = [self objectArrayWithKeyValuesArray:response.originalResponseObject objectClass:self.responseObjectClass];
+            self.responseObject = [self objectArrayWithKeyValuesArray:pretreatmentResponseObject objectClass:self.responseObjectClass];
         }
     }
 }
@@ -79,9 +79,14 @@
     self.failureHandler = nil;
 }
 
-- (void)checkResponseError:(NSError *__autoreleasing *)error
+- (NSError *)checkErrorFromOriginalResponseObject:(id)originalResponseObject
 {
-    
+    return nil;
+}
+
+- (id)pretreatmentResponseObjectFromOriginalResponseObject:(id)originalResponseObject
+{
+    return originalResponseObject;
 }
 
 - (id)objectWithKeyValues:(NSDictionary *)keyValues objectClass:(Class)objectClass

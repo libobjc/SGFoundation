@@ -123,13 +123,14 @@ NSString * const SGNetworkReachabilityStatusDidChangeName = @"SGNetworkReachabil
 
 - (void)handleSuccessRequest:(SGRequest *)request responseData:(id)responseObject
 {
-    request.response = [SGResponse responseWithOriginalResponseObject:responseObject];
-    NSError * error;
-    [request checkResponseError:&error];
+    request.originalResponseObject = responseObject;
+    NSError * error = [request checkErrorFromOriginalResponseObject:responseObject];
     if (error) {
         [self handelFailureRequest:request error:error];
         return;
     }
+    
+    request.pretreatmentResponseObject = [request pretreatmentResponseObjectFromOriginalResponseObject:responseObject];
     
     if (request.successHandler) {
         request.successHandler(request);

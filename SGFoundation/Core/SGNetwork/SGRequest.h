@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFNetworking.h>
 #import "SGOffset.h"
-#import "SGResponse.h"
 
 @class SGRequest;
 
@@ -28,7 +27,8 @@ typedef void (^SGPostFormDataBlock)(id <AFMultipartFormData> formData); //  post
 @property (nonatomic) NSInteger tag;
 @property (nonatomic, strong) NSURLSessionDataTask * task;  // sessionTask
 @property (nonatomic, strong) SGOffset * offset;            // page offset
-@property (nonatomic, strong) SGResponse * response;
+@property (nonatomic, strong) id originalResponseObject;    // HTTPServer responseObject
+@property (nonatomic, strong) id pretreatmentResponseObject;    // extract from originalResponseObject
 @property (nonatomic, strong) id responseObject;    // obj -> model, value is model or model array
 @property (nonatomic, assign) Class responseObjectClass;
 @property (nonatomic, strong) NSError * error;
@@ -58,7 +58,8 @@ typedef void (^SGPostFormDataBlock)(id <AFMultipartFormData> formData); //  post
 
 #pragma mark - subclass override
 
-- (void)checkResponseError:(NSError **)error;
+- (NSError *)checkErrorFromOriginalResponseObject:(id)originalResponseObject;
+- (id)pretreatmentResponseObjectFromOriginalResponseObject:(id)originalResponseObject;
 - (id)objectWithKeyValues:(NSDictionary *)keyValues objectClass:(Class)objectClass;
 - (NSArray *)objectArrayWithKeyValuesArray:(NSArray <NSDictionary *> *)keyValuesArray objectClass:(Class)objectClass;
 
