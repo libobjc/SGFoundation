@@ -14,7 +14,6 @@ FOUNDATION_EXPORT const unsigned char SGFoundationVersionString[];      // versi
 // class
 #import <SGFoundation/SGNetwork.h>
 #import <SGFoundation/SGRequest.h>
-#import <SGFoundation/SGResponse.h>
 #import <SGFoundation/SGOffset.h>
 
 // categroy

@@ -16,8 +16,6 @@
 		9CCDCB471DDC37A000E5C993 /* SGOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDCB3F1DDC37A000E5C993 /* SGOffset.m */; };
 		9CCDCB481DDC37A000E5C993 /* SGRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB401DDC37A000E5C993 /* SGRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CCDCB491DDC37A000E5C993 /* SGRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDCB411DDC37A000E5C993 /* SGRequest.m */; };
-		9CCDCB4A1DDC37A000E5C993 /* SGResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB421DDC37A000E5C993 /* SGResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9CCDCB4B1DDC37A000E5C993 /* SGResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDCB431DDC37A000E5C993 /* SGResponse.m */; };
 		9CCDCB4E1DDC3DD000E5C993 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCDCB4D1DDC3DD000E5C993 /* AFNetworking.framework */; };
 		9CCDCB581DDC70EF00E5C993 /* NSString+SGEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB561DDC70EF00E5C993 /* NSString+SGEncode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CCDCB591DDC70EF00E5C993 /* NSString+SGEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDCB571DDC70EF00E5C993 /* NSString+SGEncode.m */; };
@@ -36,8 +34,6 @@
 		9CCDCB3F1DDC37A000E5C993 /* SGOffset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGOffset.m; sourceTree = "<group>"; };
 		9CCDCB401DDC37A000E5C993 /* SGRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRequest.h; sourceTree = "<group>"; };
 		9CCDCB411DDC37A000E5C993 /* SGRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGRequest.m; sourceTree = "<group>"; };
-		9CCDCB421DDC37A000E5C993 /* SGResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGResponse.h; sourceTree = "<group>"; };
-		9CCDCB431DDC37A000E5C993 /* SGResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGResponse.m; sourceTree = "<group>"; };
 		9CCDCB4D1DDC3DD000E5C993 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../SGVendors/AFNetworking-master/build/Debug-iphoneos/AFNetworking.framework"; sourceTree = "<group>"; };
 		9CCDCB561DDC70EF00E5C993 /* NSString+SGEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SGEncode.h"; sourceTree = "<group>"; };
 		9CCDCB571DDC70EF00E5C993 /* NSString+SGEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SGEncode.m"; sourceTree = "<group>"; };
@@ -94,8 +90,6 @@
 				9CCDCB3F1DDC37A000E5C993 /* SGOffset.m */,
 				9CCDCB401DDC37A000E5C993 /* SGRequest.h */,
 				9CCDCB411DDC37A000E5C993 /* SGRequest.m */,
-				9CCDCB421DDC37A000E5C993 /* SGResponse.h */,
-				9CCDCB431DDC37A000E5C993 /* SGResponse.m */,
 			);
 			name = SGNetwork;
 			path = Core/SGNetwork;
@@ -134,7 +128,6 @@
 				9CCDCB441DDC37A000E5C993 /* SGNetwork.h in Headers */,
 				9CCDCB481DDC37A000E5C993 /* SGRequest.h in Headers */,
 				9CCDCB461DDC37A000E5C993 /* SGOffset.h in Headers */,
-				9CCDCB4A1DDC37A000E5C993 /* SGResponse.h in Headers */,
 				9C5BEAA41DCDEFEA00385153 /* SGFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,7 +204,6 @@
 				9CCDCB451DDC37A000E5C993 /* SGNetwork.m in Sources */,
 				9CCDCB591DDC70EF00E5C993 /* NSString+SGEncode.m in Sources */,
 				9CCDCB491DDC37A000E5C993 /* SGRequest.m in Sources */,
-				9CCDCB4B1DDC37A000E5C993 /* SGResponse.m in Sources */,
 				9CCDCB471DDC37A000E5C993 /* SGOffset.m in Sources */,
 				9CCB961D1DDAF661004657EF /* NSString+SGExtension.m in Sources */,
 			);
