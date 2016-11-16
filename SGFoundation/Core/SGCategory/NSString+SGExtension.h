@@ -10,6 +10,6 @@
 
 @interface NSString (SGExtension)
 
-- (NSArray <NSValue *> *)rangesOfString:(NSString *)string;
+- (NSArray <NSValue *> *)sg_rangesOfString:(NSString *)string;
 
 @end

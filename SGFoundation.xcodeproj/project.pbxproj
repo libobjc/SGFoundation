@@ -10,15 +10,17 @@
 		9C5BEAA41DCDEFEA00385153 /* SGFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C5BEAA21DCDEFEA00385153 /* SGFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CCB961C1DDAF661004657EF /* NSString+SGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCB961A1DDAF661004657EF /* NSString+SGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CCB961D1DDAF661004657EF /* NSString+SGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB961B1DDAF661004657EF /* NSString+SGExtension.m */; };
-		9CCDCB441DDC37A000E5C993 /* SGNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB3C1DDC37A000E5C993 /* SGNetwork.h */; };
+		9CCDCB441DDC37A000E5C993 /* SGNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB3C1DDC37A000E5C993 /* SGNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CCDCB451DDC37A000E5C993 /* SGNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDCB3D1DDC37A000E5C993 /* SGNetwork.m */; };
-		9CCDCB461DDC37A000E5C993 /* SGOffset.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB3E1DDC37A000E5C993 /* SGOffset.h */; };
+		9CCDCB461DDC37A000E5C993 /* SGOffset.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB3E1DDC37A000E5C993 /* SGOffset.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CCDCB471DDC37A000E5C993 /* SGOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDCB3F1DDC37A000E5C993 /* SGOffset.m */; };
-		9CCDCB481DDC37A000E5C993 /* SGRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB401DDC37A000E5C993 /* SGRequest.h */; };
+		9CCDCB481DDC37A000E5C993 /* SGRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB401DDC37A000E5C993 /* SGRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CCDCB491DDC37A000E5C993 /* SGRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDCB411DDC37A000E5C993 /* SGRequest.m */; };
-		9CCDCB4A1DDC37A000E5C993 /* SGResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB421DDC37A000E5C993 /* SGResponse.h */; };
+		9CCDCB4A1DDC37A000E5C993 /* SGResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB421DDC37A000E5C993 /* SGResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CCDCB4B1DDC37A000E5C993 /* SGResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDCB431DDC37A000E5C993 /* SGResponse.m */; };
 		9CCDCB4E1DDC3DD000E5C993 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCDCB4D1DDC3DD000E5C993 /* AFNetworking.framework */; };
+		9CCDCB581DDC70EF00E5C993 /* NSString+SGEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDCB561DDC70EF00E5C993 /* NSString+SGEncode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CCDCB591DDC70EF00E5C993 /* NSString+SGEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDCB571DDC70EF00E5C993 /* NSString+SGEncode.m */; };
 		9CD491061DD321CF002D978A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD491051DD321CF002D978A /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		9CCDCB421DDC37A000E5C993 /* SGResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGResponse.h; sourceTree = "<group>"; };
 		9CCDCB431DDC37A000E5C993 /* SGResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGResponse.m; sourceTree = "<group>"; };
 		9CCDCB4D1DDC3DD000E5C993 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../SGVendors/AFNetworking-master/build/Debug-iphoneos/AFNetworking.framework"; sourceTree = "<group>"; };
+		9CCDCB561DDC70EF00E5C993 /* NSString+SGEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SGEncode.h"; sourceTree = "<group>"; };
+		9CCDCB571DDC70EF00E5C993 /* NSString+SGEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SGEncode.m"; sourceTree = "<group>"; };
 		9CD491051DD321CF002D978A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -75,7 +79,6 @@
 			children = (
 				9C5BEAA21DCDEFEA00385153 /* SGFoundation.h */,
 				9C5BEAA31DCDEFEA00385153 /* Info.plist */,
-				9CCDCB4C1DDC3C2500E5C993 /* SGVendors */,
 				9CCDCB3B1DDC376000E5C993 /* SGNetwork */,
 				9CCE87611DCF6AC000B62C21 /* SGCategory */,
 			);
@@ -98,19 +101,13 @@
 			path = Core/SGNetwork;
 			sourceTree = "<group>";
 		};
-		9CCDCB4C1DDC3C2500E5C993 /* SGVendors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = SGVendors;
-			path = Core/SGVendors;
-			sourceTree = "<group>";
-		};
 		9CCE87611DCF6AC000B62C21 /* SGCategory */ = {
 			isa = PBXGroup;
 			children = (
 				9CCB961A1DDAF661004657EF /* NSString+SGExtension.h */,
 				9CCB961B1DDAF661004657EF /* NSString+SGExtension.m */,
+				9CCDCB561DDC70EF00E5C993 /* NSString+SGEncode.h */,
+				9CCDCB571DDC70EF00E5C993 /* NSString+SGEncode.m */,
 			);
 			name = SGCategory;
 			path = Core/SGCategory;
@@ -132,12 +129,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CCDCB481DDC37A000E5C993 /* SGRequest.h in Headers */,
+				9CCDCB581DDC70EF00E5C993 /* NSString+SGEncode.h in Headers */,
 				9CCB961C1DDAF661004657EF /* NSString+SGExtension.h in Headers */,
+				9CCDCB441DDC37A000E5C993 /* SGNetwork.h in Headers */,
+				9CCDCB481DDC37A000E5C993 /* SGRequest.h in Headers */,
 				9CCDCB461DDC37A000E5C993 /* SGOffset.h in Headers */,
 				9CCDCB4A1DDC37A000E5C993 /* SGResponse.h in Headers */,
 				9C5BEAA41DCDEFEA00385153 /* SGFoundation.h in Headers */,
-				9CCDCB441DDC37A000E5C993 /* SGNetwork.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CCDCB451DDC37A000E5C993 /* SGNetwork.m in Sources */,
+				9CCDCB591DDC70EF00E5C993 /* NSString+SGEncode.m in Sources */,
 				9CCDCB491DDC37A000E5C993 /* SGRequest.m in Sources */,
 				9CCDCB4B1DDC37A000E5C993 /* SGResponse.m in Sources */,
 				9CCDCB471DDC37A000E5C993 /* SGOffset.m in Sources */,
@@ -328,6 +327,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SGFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -347,6 +347,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SGFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

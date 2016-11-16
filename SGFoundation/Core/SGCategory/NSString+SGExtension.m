@@ -10,12 +10,12 @@
 
 @implementation NSString (SGExtension)
 
-- (NSArray <NSValue *> *)rangesOfString:(NSString *)string
+- (NSArray <NSValue *> *)sg_rangesOfString:(NSString *)string
 {
-    return [self rangesOfString:string baseLocation:0];
+    return [self sg_rangesOfString:string baseLocation:0];
 }
 
-- (NSArray <NSValue *> *)rangesOfString:(NSString *)string baseLocation:(NSInteger)baseLocation
+- (NSArray <NSValue *> *)sg_rangesOfString:(NSString *)string baseLocation:(NSInteger)baseLocation
 {
     if (!string) return nil;
     
@@ -27,7 +27,7 @@
             NSMutableArray <NSValue *> * values = [NSMutableArray array];
             
             NSString * subString = [self substringFromIndex:range.location + range.length];
-            NSArray <NSValue *> * subValues = [subString rangesOfString:string baseLocation:baseLocation + range.location + range.length];
+            NSArray <NSValue *> * subValues = [subString sg_rangesOfString:string baseLocation:baseLocation + range.location + range.length];
             
             [values addObject:[NSValue valueWithRange:NSMakeRange(baseLocation + range.location, range.length)]];
             [values addObjectsFromArray:subValues];

@@ -37,8 +37,7 @@ NSString * const SGNetworkReachabilityStatusDidChangeName = @"SGNetworkReachabil
     {
         self.sessionManager = [AFHTTPSessionManager manager];
         self.sessionManager.operationQueue.maxConcurrentOperationCount = 4;
-        self.sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
-        self.sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", nil];
+        self.sessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
         self.sessionManager.requestSerializer = [AFHTTPRequestSerializer serializer];
         
         [self setupNetworkListener];

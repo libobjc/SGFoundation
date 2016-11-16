@@ -15,5 +15,9 @@ FOUNDATION_EXPORT double SGFoundationVersionNumber;
 FOUNDATION_EXPORT const unsigned char SGFoundationVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SGFoundation/PublicHeader.h>
+#import <SGFoundation/SGNetwork.h>
+#import <SGFoundation/SGRequest.h>
+#import <SGFoundation/SGResponse.h>
+#import <SGFoundation/SGOffset.h>
 #import <SGFoundation/NSString+SGExtension.h>
-
+#import <SGFoundation/NSString+SGEncode.h>
