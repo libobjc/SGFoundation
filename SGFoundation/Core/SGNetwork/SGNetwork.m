@@ -39,13 +39,11 @@ NSString * const SGNetworkReachabilityStatusDidChangeName = @"SGNetworkReachabil
         self.sessionManager.operationQueue.maxConcurrentOperationCount = 4;
         self.sessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
         self.sessionManager.requestSerializer = [AFHTTPRequestSerializer serializer];
-        
-        [self setupNetworkListener];
     }
     return self;
 }
 
-- (void)setupNetworkListener
+- (void)startNetworkListener
 {
     // 网络状态改变
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {

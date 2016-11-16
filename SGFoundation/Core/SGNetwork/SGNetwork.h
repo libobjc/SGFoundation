@@ -21,6 +21,7 @@ typedef NS_ENUM(NSInteger, SGNetworkReachabilityStatus) {
 @interface SGNetwork : NSObject
 
 + (SGNetwork *)shareInstance;
+- (void)startNetworkListener;
 
 @property (nonatomic, copy) NSString * baseURLString;
 @property (nonatomic, assign, readonly) SGNetworkReachabilityStatus reachabilityStatus;
