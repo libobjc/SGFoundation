@@ -82,8 +82,8 @@ NSString * const SGNetworkReachabilityStatusDidChangeName = @"SGNetworkReachabil
         if (![parameters isKindOfClass:[NSDictionary class]] || parameters == nil) {
             NSMutableDictionary * temp = [NSMutableDictionary dictionaryWithDictionary:parameters];
             SGOffsetParams par = offset.offsetParams;
-            [temp setObject:[NSString stringWithFormat:@"%ld", par.offset] forKey:self.offsetKey];
-            [temp setObject:[NSString stringWithFormat:@"%ld", par.size] forKey:self.sizeKey];
+            [temp setObject:[NSString stringWithFormat:@"%ld", (long)par.offset] forKey:self.offsetKey];
+            [temp setObject:[NSString stringWithFormat:@"%ld", (long)par.size] forKey:self.sizeKey];
             parameters = temp;
         }
     }
