@@ -19,21 +19,18 @@
 {
     if (!string) return nil;
     
-    if ([self containsString:string])
+    NSRange range = [self rangeOfString:string];
+    if (range.location != NSNotFound)
     {
-        NSRange range = [self rangeOfString:string];
-        if (range.location != NSNotFound)
-        {
-            NSMutableArray <NSValue *> * values = [NSMutableArray array];
-            
-            NSString * subString = [self substringFromIndex:range.location + range.length];
-            NSArray <NSValue *> * subValues = [subString sg_rangesOfString:string baseLocation:baseLocation + range.location + range.length];
-            
-            [values addObject:[NSValue valueWithRange:NSMakeRange(baseLocation + range.location, range.length)]];
-            [values addObjectsFromArray:subValues];
-            
-            return values;
-        }
+        NSMutableArray <NSValue *> * values = [NSMutableArray array];
+        
+        NSString * subString = [self substringFromIndex:range.location + range.length];
+        NSArray <NSValue *> * subValues = [subString sg_rangesOfString:string baseLocation:baseLocation + range.location + range.length];
+        
+        [values addObject:[NSValue valueWithRange:NSMakeRange(baseLocation + range.location, range.length)]];
+        [values addObjectsFromArray:subValues];
+        
+        return values;
     }
     return nil;
 }
