@@ -36,10 +36,10 @@
         _pretreatmentResponseObject = pretreatmentResponseObject;
         if ([self responseObjectClass] == nil) return;
         if ([pretreatmentResponseObject isKindOfClass:[NSArray class]]) {
-            if ([self.originalResponseObject count] <= 0) return;
-            self.responseObject = [self objectWithKeyValues:pretreatmentResponseObject objectClass:self.responseObjectClass];
-        } else {
+            if ([pretreatmentResponseObject count] <= 0) return;
             self.responseObject = [self objectArrayWithKeyValuesArray:pretreatmentResponseObject objectClass:self.responseObjectClass];
+        } else {
+            self.responseObject = [self objectWithKeyValues:pretreatmentResponseObject objectClass:self.responseObjectClass];
         }
     }
 }
