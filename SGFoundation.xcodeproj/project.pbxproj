@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C13B1FF1DF7C01700F67D62 /* SGRedirect.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C13B1FD1DF7C01700F67D62 /* SGRedirect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C13B2001DF7C01700F67D62 /* SGRedirect.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C13B1FE1DF7C01700F67D62 /* SGRedirect.m */; };
 		9C5BEAA41DCDEFEA00385153 /* SGFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C5BEAA21DCDEFEA00385153 /* SGFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CCB961C1DDAF661004657EF /* NSString+SGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCB961A1DDAF661004657EF /* NSString+SGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CCB961D1DDAF661004657EF /* NSString+SGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB961B1DDAF661004657EF /* NSString+SGExtension.m */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C13B1FD1DF7C01700F67D62 /* SGRedirect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRedirect.h; sourceTree = "<group>"; };
+		9C13B1FE1DF7C01700F67D62 /* SGRedirect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGRedirect.m; sourceTree = "<group>"; };
 		9C5BEA9F1DCDEFEA00385153 /* SGFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SGFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5BEAA21DCDEFEA00385153 /* SGFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGFoundation.h; sourceTree = "<group>"; };
 		9C5BEAA31DCDEFEA00385153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				9CCDCB3F1DDC37A000E5C993 /* SGOffset.m */,
 				9CCDCB401DDC37A000E5C993 /* SGRequest.h */,
 				9CCDCB411DDC37A000E5C993 /* SGRequest.m */,
+				9C13B1FD1DF7C01700F67D62 /* SGRedirect.h */,
+				9C13B1FE1DF7C01700F67D62 /* SGRedirect.m */,
 			);
 			name = SGNetwork;
 			path = Core/SGNetwork;
@@ -128,6 +134,7 @@
 				9CCDCB441DDC37A000E5C993 /* SGNetwork.h in Headers */,
 				9CCDCB481DDC37A000E5C993 /* SGRequest.h in Headers */,
 				9CCDCB461DDC37A000E5C993 /* SGOffset.h in Headers */,
+				9C13B1FF1DF7C01700F67D62 /* SGRedirect.h in Headers */,
 				9C5BEAA41DCDEFEA00385153 /* SGFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CCDCB451DDC37A000E5C993 /* SGNetwork.m in Sources */,
+				9C13B2001DF7C01700F67D62 /* SGRedirect.m in Sources */,
 				9CCDCB591DDC70EF00E5C993 /* NSString+SGEncode.m in Sources */,
 				9CCDCB491DDC37A000E5C993 /* SGRequest.m in Sources */,
 				9CCDCB471DDC37A000E5C993 /* SGOffset.m in Sources */,

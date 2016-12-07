@@ -15,6 +15,7 @@ FOUNDATION_EXPORT const unsigned char SGFoundationVersionString[];      // versi
 #import <SGFoundation/SGNetwork.h>
 #import <SGFoundation/SGRequest.h>
 #import <SGFoundation/SGOffset.h>
+#import <SGFoundation/SGRedirect.h>
 
 // categroy
 #import <SGFoundation/NSString+SGExtension.h>
