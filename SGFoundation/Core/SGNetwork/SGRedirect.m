@@ -88,4 +88,9 @@
     self.completionHandler = nil;
 }
 
+- (void)dealloc
+{
+    NSLog(@"SGRedirect release");
+}
+
 @end
