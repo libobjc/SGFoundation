@@ -24,9 +24,11 @@ NSString * const SGNetworkReachabilityStatusDidChangeName = @"SGNetworkReachabil
 
 @implementation SGNetwork
 
+static SGNetwork * network = nil;
+static NSURLSessionConfiguration * sessionConfiguration = nil;
+
 + (SGNetwork *)shareInstance
 {
-    static SGNetwork * network = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         network = [[self alloc] init];
@@ -34,11 +36,16 @@ NSString * const SGNetworkReachabilityStatusDidChangeName = @"SGNetworkReachabil
     return network;
 }
 
++ (void)setSessionConfiguration:(NSURLSessionConfiguration *)config
+{
+    sessionConfiguration = config;
+}
+
 - (instancetype)init
 {
     if (self = [super init])
     {
-        self.sessionManager = [AFHTTPSessionManager manager];
+        self.sessionManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:sessionConfiguration];
         self.sessionManager.operationQueue.maxConcurrentOperationCount = 4;
         self.sessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
         self.sessionManager.requestSerializer = [AFHTTPRequestSerializer serializer];

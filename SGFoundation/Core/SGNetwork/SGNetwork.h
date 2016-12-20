@@ -21,6 +21,8 @@ typedef NS_ENUM(NSInteger, SGNetworkReachabilityStatus) {
 @interface SGNetwork : NSObject
 
 + (SGNetwork *)shareInstance;
++ (void)setSessionConfiguration:(NSURLSessionConfiguration *)sessionConfiguration;
+
 - (void)startNetworkListener;
 
 @property (nonatomic, copy) NSString * baseURLString;
@@ -38,5 +40,8 @@ typedef NS_ENUM(NSInteger, SGNetworkReachabilityStatus) {
 
 // request config
 - (void)setOffsetKey:(NSString *)offsetKey sizeKey:(NSString *)sizeKey;     // default is 'offset' and 'size'
+
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
